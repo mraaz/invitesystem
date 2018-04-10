@@ -101,19 +101,13 @@ __SNP_Invite_Body__ = "Hi All\n\n" \
                       "Details for the night are:\n\n" \
                       "Date: See the email subject for the date.\n\n" \
                       "Time: 6.45pm for 7.00 pm start.\n\n" \
-                      "Bonus: On time arrivals will receive approximately 10% extra chips.\n\n" \
-                      "Place: Marc Raaz's place. 23 Phoenix Street, Rochedale. \n\n" \
+                      "Bonus: On time arrivals will receive approximately 10% extra chips.\n\n" \                      
                       "Drinks: BYO.\n\n" \
                       "Please RSVP by 7:00 PM Wednesday prior to game night.\n\n" \
                       "Invite-a-friend: Please invite your friends. Just ask them to send an email to " + __SNP_From_Address__ + " with only 'SNP' (no quotes) in the body or subject of the email to register.\n\n" \
                       "Invites out: Invites goes out randomly between 3pm and 6:30pm on Game nights, only the 1st 9 people will be accepted the remaining will go on the waiting list. (10th spot is for new arrivals...aka fresh blood)\n\n" \
                       "Auto Replies: This is frowned upon and very easily detected, please refrain from doing this, repeated offenders will be dealt with accordingly\n\n" \
-                      "Enter Results link: https://tinyurl.com/SNPForm\n\n" \
-                      "View Results link: https://tinyurl.com/SNPResults\n\n or sites.google.com/view/brisbanesnp\n\n" \
-                      "Thanks\n\n" \
-                      "Marc Raaz\n" \
-                      "0429 88 1988"
-
+                     
 __SNP_Declined_Email__ = "Why thank you my good sir, I will send out invites to the other good folks at once.\n"
 
 __SNP_Accepted_Email__ = "Congratulations, you're in!\n\n" \
@@ -138,8 +132,8 @@ __SNP_Cancelled_Msg__ = "Sorry guys but the latest SNP Game has been cancelled..
                         "Confusing I know, imagine how I feel\n\n" \
                         "Marc Raaz the human should sent out an email shortly verifying if indeed the next SNP has been cancelled."
 
-__SNP_Location__ = "23 Phoenix St " \
-                   "Rochedale"
+__SNP_Location__ = "t " \
+                   "Brisbane"
 
 # create a peewee database instance -- our models will use this database to
 # persist information
@@ -674,12 +668,12 @@ def usageFive(playerID):
 def usage100(strSubject, strEmail):
     """
     :param: Email subject and Email Address
-    :return: sent date of a new Event(if from mnraaz\jezzaganda\jezzaraaz sent to list invite email)
+    :return: sent date of a new Event(if from xxxx sent to list invite email)
     """
     if DEBUG:
         logging.critical ("Got to 100")
 
-    if (strEmail == 'mnraaz@gmail.com') or (strEmail == 'jezzaraaz@gmail.com') or (strEmail == 'jezzaganda@gmail.com'):
+    if (strEmail == 'xxx@gmail.com') or (strEmail == 'xxxx@gmail.com') or (strEmail == 'xxxx@gmail.com'):
         if (strSubject != "") and ((strSubject).lower().find("snp") != -1):
             strMylist = strSubject.split(" ")
             if DEBUG:
@@ -745,7 +739,7 @@ def usage101(strSubject, strEmail):
     if DEBUG:
         logging.critical ("Got to 101")
 
-    if (strEmail == 'mnraaz@gmail.com') or (strEmail == 'jezzaraaz@gmail.com') or (strEmail == 'jezzaganda@gmail.com'):
+    if (strEmail == 'xxx@gmail.com') or (strEmail == 'xxxx@gmail.com') or (strEmail == 'xxxx@gmail.com'):
         if DEBUG:
             logging.critical ("Got to 101a")
 
@@ -816,7 +810,7 @@ def usage102(strSubject, strEmail):
     if DEBUG:
         logging.critical ("Got to 102")
 
-    if (strEmail == 'mnraaz@gmail.com') or (strEmail == 'jezzaraaz@gmail.com') or (strEmail == 'jezzaganda@gmail.com'):
+    if (strEmail == 'xxx@gmail.com') or (strEmail == 'xxxz@gmail.com') or (strEmail == 'xxxx@gmail.com'):
         if strSubject != "" :
             strMylist = strSubject.split(" ")
 
